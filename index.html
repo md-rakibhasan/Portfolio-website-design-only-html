@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 25px;
+        }
+        body h1,h2,h3{
+            text-align: center;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 5px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 18px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        section {
+            padding: 10px;
+            margin: 30px auto;
+            max-width: 800px;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form label {
+            margin: 5px 0 0;
+        }
+        form input, form textarea {
+            padding: 10px;
+            margin-bottom: 30px;
+        }
+        form button {
+            padding: 12px;
+            background: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .project img {
+            max-width: 100%;
+            height: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Welcome to my personal portfolio website. Here you can learn more about me, see my projects, find out about the services I offer, and get in touch with me. Enjoy your stay!</p>
+    </section>
+
+    <section id="about">
+        <h1>About Me</h1>
+        <p>Hello! I'm Md. Rakib Hasan, a passionate web developer. I specialize in creating stunning websites using the latest technologies. With over 3 years of experience, I am dedicated to delivering high-quality web solutions that meet the needs of my clients.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <img src="https://via.placeholder.com/300" alt="Project 1">
+            <p>A brief description of your first project. Highlight key features and technologies used.</p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <img src="https://via.placeholder.com/300" alt="Project 2">
+            <p>A brief description of your second project. Highlight key features and technologies used.</p>
+        </div>
+        <div class="project">
+            <h3>Project 3</h3>
+            <img src="https://via.placeholder.com/300" alt="Project 3">
+            <p>A brief description of your third project. Highlight key features and technologies used.</p>
+        </div>
+        <div class="project">
+            <h3>Project 4</h3>
+            <img src="https://via.placeholder.com/300" alt="Project 4">
+            <p>A brief description of your fourth project. Highlight key features and technologies used.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Services</h2>
+        <p>I offer a variety of web development services including:</p>
+        <ul>
+            <li>Website Design</li>
+            <li>Website Development</li>
+            <li>SEO Optimization</li>
+            <li>Responsive Design</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="https://formspree.io/f/{your-form-id}" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <section id="table">
+        <h2>Sample Table</h2>
+        <table>
+            <tr>
+                <th>Service</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Website Design</td>
+                <td>Creating visually appealing and user-friendly designs</td>
+                <td>$500</td>
+            </tr>
+            <tr>
+                <td>Website Development</td>
+                <td>Developing functional and responsive websites</td>
+                <td>$1000</td>
+            </tr>
+            <tr>
+                <td>SEO Optimization</td>
+                <td>Improving website visibility on search engines</td>
+                <td>$300</td>
+            </tr>
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Md. Rakib Hasan. All rights reserved.</p>
+    </footer>
+</body>
+</html>
